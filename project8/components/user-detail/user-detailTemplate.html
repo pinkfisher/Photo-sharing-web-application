@@ -1,0 +1,26 @@
+<h1 class=title>Welcome to My Page !</h1>
+<div>
+	<md-card>
+		<md-list-item class="sidenav" >
+		<img class = "md-avatar" id ="detail" ng-src = "images/emoji.jpg"/>
+		<div class="md-list-item-text" >
+			<ul class="userDetails">
+			<li><span class="intro" >ID:</span>{{main.curUser._id}}</li>
+			<li><span class="intro">FIRST NAME: </span>{{main.curUser.first_name}}</li>
+			<li><span class="intro">LAST NAME:  </span>{{main.curUser.last_name}}</li>
+			<li><span class="intro">LOCATION:   </span>{{main.curUser.location}}</li>
+			<li><span class="intro">DESCRIPTION:</span>{{main.curUser.description}}</li>
+			<li><span class="intro">OCCUPATION: </span>{{main.curUser.occupation}}</li>
+			<li class="intro"><a href="#!photos/{{main.curUser._id}}">My photos</a></li>
+			<li class="smallText">Most recent photo (Created:{{main.recentPhotoDate}})<br>
+			<span><a href="#!photos/{{main.curUser._id}}"><image class="detailimage" ng-src = {{main.recentPhoto}} ></image></a></span>
+			</li>
+			<li class="smallText">Most popular photo (Comment Number:{{main.comment_count}})<br>
+			<span><a href="#!photos/{{main.curUser._id}}"><image class="detailimage" ng-src = {{main.mostCommentPhoto}} ></image></a></span>
+			</li>
+			</ul>
+			<button class="deleteaccout" ng-click="deleteUser()" ng-if="main.curUser._id == main.login_user._id">Delete Account</button>
+		</div>
+	</md-list-item>
+	</md-card>
+</div>

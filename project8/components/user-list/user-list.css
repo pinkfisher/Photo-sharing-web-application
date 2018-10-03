@@ -1,0 +1,30 @@
+.sidenav{
+	padding: 20px;
+	text-align: left;
+	font-size: 20px;
+	list-style-type: none;
+}
+.list_title{
+	margin-left:10px;
+	font-weight:bold;
+}
+.newPhoto{
+	height: 20px;
+	width: 20px;
+}
+#profile{
+	height: 30px;
+	width: 30px;
+}
+.activity{
+	font-size: 10px;
+}
+a:link{
+	text-decoration: none;
+	color:#002db3;
+}
+
+a:hover {
+	cursor:pointer;
+	color:#809fff;
+}

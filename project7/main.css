@@ -1,0 +1,31 @@
+body {
+	font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.toolbar-left,.md-primary{
+	margin-left: 20px;
+	margin-top: 20px;
+	font-size: 24px;
+	text-align: left;
+}
+.version-number{
+	margin-left: 20px;
+	margin-top: 20px;
+	font-size: 24px;
+	text-align: center;
+}
+.toolbar-right{
+	margin-left: 20px;
+	margin-top: 20px;
+	font-size: 24px;
+	text-align: center;
+}
+
+.md-whiteframe-z2{
+	border-bottom: 1px solid teal;
+	padding: 10px 0;
+	text-align: left;
+}
+#content{
+	background: linear-gradient(to bottom, #e6ecff,#4747d1)
+}

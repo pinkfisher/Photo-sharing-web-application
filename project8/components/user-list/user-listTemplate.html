@@ -1,0 +1,20 @@
+<div>
+	<p class="list_title">Current User:</p>
+	<md-list-item class="sidenav">
+		<img class = "md-avatar" id ="profile" ng-src = "images/emoji.jpg"/>
+		<div class="md-list-item-text" >
+		<a href="#!users/{{main.login_user._id}}">{{main.login_user.first_name}}&nbsp;{{main.login_user.last_name}}</a><br>
+		<span class="activity">{{main.login_user.activity}}</span>
+		<img class="newPhoto" ng-if="main.login_user.activity =='Posted a photo'" ng-src = "images/{{main.login_user.recent_photo}}"/>
+		</div>
+	</md-list-item>
+	<p class="list_title">Friend List:</p>
+	<md-list-item class="sidenav" ng-repeat="x in main.friendList">
+		<img class = "md-avatar" id ="profile" ng-src = "images/emoji.jpg"/>
+		<div class="md-list-item-text" >
+			<a href="#!users/{{x._id}}">{{x.first_name}}&nbsp;{{x.last_name}}</a><br>
+			<span class="activity">{{x.activity}}</span>
+			<img class="newPhoto" ng-if="x.activity =='Posted a photo'" ng-src = "images/{{x.recent_photo}}"/>
+		</div>
+	</md-list-item>
+</div>

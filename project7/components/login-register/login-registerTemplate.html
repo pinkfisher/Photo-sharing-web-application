@@ -1,0 +1,35 @@
+<div class="login-register">
+	<div class="login">
+		<h1>Login to explore more!</h1>
+		<p>UserName:</p>
+		<input type="text" ng-model="main.login_name">
+		<p>Password:</p>
+		<input type="Password" ng-model="main.login_password"><br>
+		<button class="lrbutton" ng-click="login()">Login</button>
+		<p class="message">{{main.login_message}}</p>
+	</div>
+	<div class="register">
+		<h1>Not a user yet? Register Now!</h1>
+		<button class="lrbutton" ng-click="potentialUser()">Create a new accout</button>
+	</div>
+	<div class="account" ng-if="register.toRegister">
+		<p>Login Name:</p>
+		<input type="text" ng-model="register.newName">
+		<p>Password:</p>
+		<input type="password" ng-model="register.password1">
+		<p>Same password again:</p>
+		<input type="password" ng-model="register.password2">
+		<p>First Name:</p>
+		<input type="text" ng-model="register.first_name">
+		<p>Last Name:</p>
+		<input type="text" ng-model="register.last_name">
+		<p>Location:</p>
+		<input type="text" ng-model="register.location">
+		<p>Description:</p>
+		<input type="text" ng-model="register.description">
+		<p>Occupation:</p>
+		<input type="text" ng-model="register.occupation"><br>
+		<button class="lrbutton"  ng-click="register()">Register Me</button>
+	</div>
+		<p class="message" >{{register.message}}</p>
+</div>

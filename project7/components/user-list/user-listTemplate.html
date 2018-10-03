@@ -1,0 +1,8 @@
+<div>
+	<md-list-item class="sidenav" ng-repeat="x in main.userList">
+	<img class = "md-avatar" id ="profile" ng-src = "images/emoji.jpg"/>
+	<div class="md-list-item-text" >
+		<a href="#!users/{{x._id}}">{{x.first_name}}&nbsp;{{x.last_name}}</a>
+	</div>
+	</md-list-item>
+</div>

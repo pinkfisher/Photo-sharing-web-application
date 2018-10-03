@@ -1,0 +1,21 @@
+<h1 class="title">My photos</h1>
+<div  class="container" flex layout="column" ng-repeat = "photo in main.photolist">
+	<md-card>
+		<img  ng-src = "images/{{photo.file_name}}"/><br>
+		<span class="date">Created:{{photo.date_time}}</span>
+		<p class="liked" ng-if="hasliked(photo)">You have already liked this photo!</p>
+		<button class='delete' ng-if ="main.curUser._id == main.login_user._id" ng-click="deletePhoto(photo)"> Delete </button>
+		<ul>
+			<li class="comment" ng-repeat = "comment in photo.comments">
+				<a href="#!users/{{comment.user._id}}" class="name">{{comment.user.first_name}}&nbsp;{{comment.user.last_name}}:</a>&nbsp;&nbsp;{{comment.comment}}
+				<span class="date">{{comment.date_time}}</span>
+				<button class='deleteComment' ng-if ="comment.user._id == main.login_user._id" ng-click="deleteComment(photo,comment)"> Delete </button>
+			</li>
+			<input type="test" class='textField' ng-model ="main.newcomment">
+			<button class="addbutton" ng-click="addComment(photo)"> Add Comment</button>
+			<i class="material-icons" ng-show="!hasliked(photo)" ng-click="likePhoto(photo)">thumb_up</i>
+			<i class="material-icons" ng-show="hasliked(photo)" ng-click="likePhoto(photo)">thumb_down</i>
+			<span>Liked:{{photo.like_count}}</span>
+		</ul>
+	</md-card>
+</div>

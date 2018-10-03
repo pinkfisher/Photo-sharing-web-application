@@ -1,0 +1,17 @@
+.sidenav{
+	padding: 10px;
+	text-align: left;
+	font-size: 20px;
+	list-style-type: none;
+}
+li{
+	margin: 30px;
+}
+a:link{
+	text-decoration: none;
+	color:#002db3;
+}
+
+a:hover {
+	color:#809fff;
+}

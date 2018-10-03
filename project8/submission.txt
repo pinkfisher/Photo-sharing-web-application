@@ -1,0 +1,39 @@
+Project #8 - Submission form
+
+Please fill in this form and submit it with your project #8.
+
+Enter no more than 5 user stories that you did for the assignment that you would like to be
+graded on. For each story include the following information:
+
+Story number and name: 1 - Extend user profile detail with usage
+Story points: 3
+Brief description to see the story in action:
+When viewing the details of a user, the user detail page will include the most recently uploaded photo and  the photo has the most
+comments on it.
+
+Story number and name: 5 - Deleting Comments, photos and users
+Story points: 4
+Brief description to see the story in action:
+By clicking on related button, the logged in user can delete any photo, comment that he/she made, as well as the user account.
+
+
+Story number and name: 6 - Photo like votes
+Story points: 4
+Brief description to see the story in action:
+The user can click on "thumb up" button to like a photo or "thumb down" button to unlike a photo. The photo list will be resorted based
+on the number.
+
+Story number and name: 8 - Sidebar list marks users with new activity
+Story points: 3
+Brief description to see the story in action:
+The nav sidebar will show the last activity done by each user, and that display is update automaticallly.
+
+Total Story Points:14
+
+Marketing Video URL (ensure permissions are set to public viewing): https://youtu.be/NTPOvnQAZno
+
+Is it OK with you if we post your Marketing Video URL on the class discussion forum? Yes
+
+Any special instructions for Grading (should be easy to run app from new machine):None
+
+

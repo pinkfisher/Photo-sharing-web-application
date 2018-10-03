@@ -1,0 +1,25 @@
+
+.date,.liked{
+	text-align: right;
+	font-size: 10px;
+}
+.comment{
+	font-size:18px;
+	list-style-type: none;
+}
+.delete{
+	position:relative;
+	left:90%;
+	right:5%;
+	text-align: center;
+	font-size: 10px;
+	width: 100px;
+}
+.deleteComment{
+	text-align: center;
+	font-size: 10px;
+	width: 60px;
+}
+.textField{
+	width:60%;
+}

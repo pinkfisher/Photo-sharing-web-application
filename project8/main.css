@@ -1,0 +1,40 @@
+body {
+	font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.toolbar-left{
+	margin-left: 20px;
+	margin-top: 20px;
+	font-size: 24px;
+	text-align: left;
+}
+
+.material-icons:hover{
+	cursor:pointer;
+}
+.version-number{
+	margin-left: 20px;
+	margin-top: 20px;
+	font-size: 24px;
+	text-align: center;
+}
+.toolbar-right{
+	margin-left: 20px;
+	margin-top: 20px;
+	font-size: 24px;
+	text-align: center;
+}
+
+.md-whiteframe-z2{
+	border-bottom: 1px solid teal;
+	padding: 10px 0;
+	text-align: left;
+}
+#file{
+	margin-left: 5px;
+	font-size: 15px;
+	text-align: right;
+}
+#content{
+	background: linear-gradient(to bottom, #e6ecff,#4747d1)
+}

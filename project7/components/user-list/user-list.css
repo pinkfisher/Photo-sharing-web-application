@@ -1,0 +1,19 @@
+.sidenav{
+	padding: 10px;
+	text-align: left;
+	font-size: 20px;
+	list-style-type: none;
+}
+#profile{
+	height: 30px;
+	width: 30px;
+}
+a:link{
+	text-decoration: none;
+	color:#002db3;
+}
+
+a:hover {
+	cursor:pointer;
+	color:#809fff;
+}

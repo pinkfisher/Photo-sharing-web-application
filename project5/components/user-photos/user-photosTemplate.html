@@ -1,0 +1,13 @@
+<h1 class="title">My photos</h1>
+<div  class="container" flex layout="column" ng-repeat = "photo in main.photolist">
+	<md-card>
+		<img ng-src = "images/{{photo.file_name}}"/>
+		<p class="date">Created:{{photo.date_time}}</p>
+		<ul>
+			<li class="comment" ng-repeat = "comment in photo.comments">
+				<a href="#!users/{{comment.user._id}}" class="name">{{comment.user.first_name}}&nbsp;{{comment.user.last_name}}:</a>&nbsp;&nbsp;{{comment.comment}}
+				<span class="date">{{comment.date_time}}</span>
+			</li>
+		</ul>
+	</md-card>
+</div>

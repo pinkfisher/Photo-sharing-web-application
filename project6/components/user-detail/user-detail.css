@@ -1,0 +1,29 @@
+.title{
+	padding-top: 20px;
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	text-align: center;
+	font-weight: bold;
+	color:#002db3;
+}
+li{
+	margin:28px;
+}
+.userDetails{
+	padding-left: 20px;
+	font-size:25px;
+	margin:70px;
+	list-style-type: none;
+	color:#002db3;
+}
+.intro{
+	display: inline-block;
+	width:180px;
+	margin-right: 40px;
+	text-align: left;
+}
+
+#detail{
+	margin-left: 100px;
+	height: 100px;
+	width: 100px;
+}
